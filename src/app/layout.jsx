@@ -1,6 +1,11 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from '@/components/Navbar';
+import Navbar from "@/components/Navbar";
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,14 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <header>
-        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-      </header>
       <body className={inter.className}>
         <Navbar />
-        <main className="container mx-auto px-5 mt-4">
-          {children}
-        </main>
+        <main className="container mx-auto px-5 mt-4">{children}</main>
       </body>
     </html>
   );

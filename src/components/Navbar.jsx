@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="bg-bgPrimary py-5 mb-2 border-b-2 border-white mx-auto">
       <div className="container flex justify-between px-10 md:px-5 mx-auto">
-        <Link href="/">
+        <Link href="/" className="my-auto">
           <h1 className="text-2xl font-bold">ResourceCyan</h1>
         </Link>
         <ul className="flex gap-x-4">

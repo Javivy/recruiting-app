@@ -13,6 +13,10 @@ const Developer = new Schema(
       required: [true, "The description is required"],
       trim: true,
     },
+    portfolio_link: {
+      type: String,
+      trim: true,
+    },
     social_media_links: {
       type: Map,
       of: String,
