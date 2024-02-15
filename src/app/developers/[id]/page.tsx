@@ -44,7 +44,7 @@ const SingleDeveloper = () => {
   return (
     <div>
       {developer ? (
-        <div className="relative bg-primary rounded-md p-4 mt-8">
+        <div className="relative bg-cyan shadow-lg rounded-md p-4 mt-8">
           <Image
             src="/assets/img/profile_pic.jpg"
             width={100}
@@ -54,10 +54,10 @@ const SingleDeveloper = () => {
           />
           <div className="flex justify-between">
             <h1 className="ml-[4.5rem] text-2xl font-bold">{developer.name}</h1>
-            <p className="my-auto">{typeOfDeveloper()}</p>
+            <p className="my-auto font-bold">{typeOfDeveloper()}</p>
           </div>
 
-          <p className="mt-12 text-bgPrimary">
+          <p className="mt-12 text-gray">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptatibus ipsa, omnis tenetur alias fugiat nihil nisi nobis,
             beatae adipisci maxime doloribus sequi labore reiciendis odit
@@ -76,7 +76,7 @@ const SingleDeveloper = () => {
                     <Link
                       href={value as string}
                       target="_blank"
-                      className="flex font-bold my-auto bg-bgPrimary text-primary py-1 px-2 rounded-md hover:bg-bgSecondary transition-all"
+                      className="flex font-bold my-auto bg-white/40 text-bgPrimary py-1 px-2 rounded-md hover:bg-primary transition-all"
                     >
                       <FaLink className="mr-2 my-auto" />
                       {key}
@@ -91,11 +91,11 @@ const SingleDeveloper = () => {
       ) : (
         <div className="flex justify-center">
           <Box sx={{ width: "100%" }}>
-            <Skeleton animation="wave" sx={{ bgcolor: "#2a4e57" }} />
-            <Skeleton animation="wave" sx={{ bgcolor: "#2a4e57" }} />
-            <Skeleton animation="wave" sx={{ bgcolor: "#2a4e57" }} />
-            <Skeleton animation="wave" sx={{ bgcolor: "#2a4e57" }} />
-            <Skeleton animation="wave" sx={{ bgcolor: "#2a4e57" }} />
+            <Skeleton animation="wave" sx={{ bgcolor: "#7FC7D9" }} />
+            <Skeleton animation="wave" sx={{ bgcolor: "#7FC7D9" }} />
+            <Skeleton animation="wave" sx={{ bgcolor: "#7FC7D9" }} />
+            <Skeleton animation="wave" sx={{ bgcolor: "#7FC7D9" }} />
+            <Skeleton animation="wave" sx={{ bgcolor: "#7FC7D9" }} />
           </Box>
         </div>
       )}

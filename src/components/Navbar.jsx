@@ -3,16 +3,16 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="bg-bgPrimary py-5 mb-2 border-b-2 border-white mx-auto">
+    <nav className="bg-[#96c9d5] py-5 mb-2 mx-auto shadow-md">
       <div className="container flex justify-between px-10 md:px-5 mx-auto">
         <Link href="/" className="my-auto">
-          <h1 className="text-2xl font-bold">ResourceCyan</h1>
+          <h1 className="text-2xl font-bold text-bgPrimary/70">Resourcyan</h1>
         </Link>
         <ul className="flex gap-x-4">
-          <li className="px-3 py-2 hover:bg-primary hover:text-bgPrimary font-bold rounded-lg transition-all">
+          <li className="px-3 py-2 hover:bg-bgSecondary text-bgPrimary hover:text-white font-bold rounded-lg transition-all">
             <Link href="/tasks/new">Log In</Link>
           </li>
-          <li className="px-3 py-2 hover:bg-primary hover:text-bgPrimary font-bold rounded-lg transition-all">
+          <li className="px-3 py-2 hover:bg-bgSecondary text-bgPrimary hover:text-white font-bold rounded-lg transition-all">
             <Link href="/tasks/new">Sign Up</Link>
           </li>
         </ul>
