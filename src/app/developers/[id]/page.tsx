@@ -65,7 +65,7 @@ const SingleDeveloper = () => {
             optio beatae eaque reiciendis maxime molestiae autem praesentium
             distinctio commodi et sunt a assumenda magnam officia voluptatibus
             adipisci sequi fugit velit, deleniti quis inventore! Saepe
-            exercitationem, officiis
+            exercitationem, officiis, hello
           </p>
 
           <div className="social-media-links mt-14">
